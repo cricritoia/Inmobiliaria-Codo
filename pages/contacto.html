@@ -39,7 +39,7 @@
 
     </header>
     <main class="main-contacto">
-        <form class="formulario">
+        <form class="formulario" id="formulario">
             <fieldset class="info-personal">
                 <legend>Información Personal</legend>
 
@@ -70,8 +70,8 @@
                 <input type="number" placeholder="Tu Precio o Presupuesto" id="presupuesto">
 
                 <p>Si usted Vende adjunte una imagen de la Propiedad</p>
-                <label for="image"> Imagen de la Propiedad</label>
-                <input type="file" placeholder="Seleccionar imagen">
+                <label for="archivo"> Imagen de la Propiedad</label>
+                <input type="file" placeholder="Seleccionar imagen" id="archivo">
 
             </fieldset>
 
@@ -82,11 +82,11 @@
                 <p>Como desea ser contactado?</p>
 
                 <div class="forma-contacto">
-                    <label for="contactar-telefono">Teléfono</label>
-                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+                    <label for="contactarTelefono">Teléfono</label>
+                    <input name="contacto" type="radio" value="telefono" id="contactarTelefono">
 
-                    <label for="contactar-email">E-mail</label>
-                    <input name="contacto" type="radio" value="email" id="contactar-email">
+                    <label for="contactarEmail">E-mail</label>
+                    <input name="contacto" type="radio" value="email" id="contactarEmail">
                 </div>
 
                 <p>Si eligió teléfono, elija la fecha y la hora</p>
@@ -99,10 +99,10 @@
 
             </fieldset>
 
-            <input type="submit" value="Enviar" class="boton-enviar">
+            <input type="submit" value="Enviar" class="boton-enviar" id="enviar">
         </form>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="contenedor contenido-footer">
             <div class="contenido-sociales">
                 <img class="icons" src="../public/email.svg" alt="Icono E-mail">
