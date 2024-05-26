@@ -11,8 +11,8 @@
     <link rel="preload" href="/css/styles.css" as="style">
     <link href="/css/styles.css" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body class="contenedor">
+    <header class="header-contacto">
         <div class="contenedor">
             <div class="contenedor contenido-header">
 
@@ -26,7 +26,7 @@
                 </h1>span>
                 </h1>
                 <h3>Contacto</h3>
-                <nav class="contenido-nav">
+                <nav class="navegacion-principal">
                     <a href="/index.html">Inicio</a>
                     <a href="/pages/nosotros.html">Nosotros</a>
                     <a href="/pages/ventas.html">Ventas</a>
@@ -38,9 +38,9 @@
 
 
     </header>
-    <main>
+    <main class="main-contacto">
         <form class="formulario">
-            <fieldset>
+            <fieldset class="info-personal">
                 <legend>Información Personal</legend>
 
                 <label for="nombre">Nombre</label>
@@ -56,8 +56,8 @@
                 <textarea id="mensaje"></textarea>
             </fieldset>
 
-            <fieldset>
-                <legend>Información sobre la propiedad</legend>
+            <fieldset class="info-compra-venta">
+                <legend>En que te podemos ayudar?</legend>
 
                 <label for="opciones">Vende o Compra:</label>
                 <select id="opciones">
@@ -69,12 +69,17 @@
                 <label for="presupuesto">Precio o Presupuesto</label>
                 <input type="number" placeholder="Tu Precio o Presupuesto" id="presupuesto">
 
+                <p>Si usted Vende adjunte una imagen de la Propiedad</p>
+                <label for="image"> Imagen de la Propiedad</label>
+                <input type="file" placeholder="Seleccionar imagen">
+
             </fieldset>
 
-            <fieldset>
-                <legend>Información sobre la propiedad</legend>
 
-                <p>Como desea ser contactado</p>
+            <fieldset class="info-contacto">
+                <legend>Información sobre Contacto</legend>
+
+                <p>Como desea ser contactado?</p>
 
                 <div class="forma-contacto">
                     <label for="contactar-telefono">Teléfono</label>
@@ -94,11 +99,29 @@
 
             </fieldset>
 
-            <input type="submit" value="Enviar" class="boton-verde">
+            <input type="submit" value="Enviar" class="boton-enviar">
         </form>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <div class="contenido-sociales">
+                <img class="icons" src="../public/email.svg" alt="Icono E-mail">
+                <img class="icons" src="../public/facebook.svg" alt="Icono Facebook">
+                <img class="icons" src="../public/instagram.svg" alt="Icono Instagram">
+                <img class="icons"src="../public/wathsapp.svg" alt="Icono Wathsapp">
+            </div>
 
+            <nav class="navegacion-principal">
+                <a href="/index.html">Inicio</a>
+                <a href="/pages/nosotros.html">Nosotros</a>
+                <a href="/pages/ventas.html">Ventas</a>
+                <a href="/pages/alquileres.html">Alquileres</a>
+                <h5>Copyright © 2024 Inmobiliaria Codo | Powered by Grupo 1</h5>
+            </nav>
+        </div>
     </footer>
+
+    <script src="../js/validaciones.js"></script>
+
 </body>
 </html>
