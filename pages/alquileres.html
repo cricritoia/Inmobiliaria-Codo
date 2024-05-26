@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inmobiliaria Codo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" 
-    rel="stylesheet">
-    <link rel="preload" href="/css/styles.css" as="style">
-    <link href="/css/styles.css" rel="stylesheet">
+    <title>Alquileres - Inmobiliaria Codo</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <header>
-        <div class="contenedor">
-            <div class="contenedor contenido-header">
-
-                <h1 class="logo">
-                    <a href="/index.html">
-                        Inmobiliaria
-                        <span class="span-logo">
-                            Codo
-                        </span>
-                    </a>
-                </h1>
-                <h3>Carrito</h3>
-                <nav class="contenido-nav">
-                    <a href="/index.html">Inicio</a>
-                    <a href="/pages/nosotros.html">Nosotros</a>
-                    <a href="/pages/contacto.html">Contacto</a>
-                    <a href="/pages/ventas.html">Ventas</a>
-                </nav>
-            </div>
-
+<body class="contenedor">
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1 class="logo" href="/index.html">
+                Inmobiliaria
+                <span class="span-logo">Codo</span>
+            </h1>
+            <nav class="navegacion-principal">
+                <a href="/index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="ventas.html">Ventas</a>
+                <a href="alquileres.html">Alquileres</a>
+            </nav>
         </div>
-
-
     </header>
-    <main>
-
+    <main class="main">
+        <h2 class="titulo-del-main">Propiedades en Alquiler</h2>
+        <div class="contenido-del-main">
+            <div class="contenido-novedades">
+                <div class="contenido-imagenes">
+                    <h3>Departamento de Lujo</h3>
+                    <img loading="lazy" src="../public/anuncio2.jpg" alt="Departamento de Lujo">
+                    <h5>Precio: $1,200/mes</h5>
+                    <p>Ubicación: Rosario</p>
+                    <button><a href="contacto.html">Contacto</a></button>
+                </div>
+                <div class="contenido-imagenes">
+                    <h3>Casa con Jardín</h3>
+                    <img loading="lazy" src="../public/anuncio1.jpg" alt="Casa con Jardín">
+                    <h5>Precio: $900/mes</h5>
+                    <p>Ubicación: Mendoza</p>
+                    <button><a href="contacto.html">Contacto</a></button>
+                </div>
+                <!-- Agrega más propiedades según sea necesario -->
+            </div>
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <nav class="contenido-nav">
+                <a href="/index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="ventas.html">Ventas</a>
+                <a href="alquileres.html">Alquileres</a>
+            </nav>
+        </div>
+        <p>&copy; 2024 Inmobiliaria Codo. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
