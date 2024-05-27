@@ -76,12 +76,34 @@ a:hover {
 
 
 .header {
-    background-image: url(../public/header.jpg);
+    
     height: 80rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.header-index {
+    background-image: url(../public/header.jpg);
+}
+
+.header-alquileres {
+    background-image: url(../public/anuncio5.jpg);
+}
+
+.header-nosotros {
+    background-image: url(../public/nosotros3.jpg);
+}
+
+.header-ventas {
+    background-image: url(../public/anuncio4.jpg);
+}
+
+
+.header-contacto {
+    background-image: url(../public/contacto.jpg);
+}
+
 
 .contenido-header {
     background-color:var(--negro);
@@ -264,4 +286,17 @@ footer {
         cursor: pointer;
 
     }
+}
+
+/* Nosotros */
+
+.contenido-nosotros {
+    background-color: var(--primario);
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.firmas-nosotros {
+    display: flex;
+    justify-content: space-around;
 }
